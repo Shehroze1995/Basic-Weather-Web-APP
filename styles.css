@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-image: url(assets/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+.weatherContainer {
+  background-color: #222;
+  color: white;
+  padding: min(4vw,2rem);
+  border-radius: 1rem;
+  width: min(90%, 400px);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+}
+header {
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+#userInput {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: min(8vw, 1.9rem);
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+#userInput::placeholder{
+  color: rgba(0, 0, 255, 0.5);
+  font-family: fantasy;
+}
+header img {
+  width: 1.6rem;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+}
+.cloudImg{
+  width: 60%;
+}
+.cloudImg img{
+  width: 100%;
+}
+main h1{
+  font-size: 4rem;
+}
+.humidity{
+  display: flex;
+  place-items: center;
+  gap: 0.5rem;
+}
+.humidity img{
+  width: 2.2rem;
+}
+.details{
+  width: 100%;
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+#cityName{
+  text-transform: capitalize;
+}
+.hidden{
+  display: none;
+}
+#error{
+  margin-top: 2rem;
+  text-align: center;
+}
+#loading{
+  width: 5rem;
+  margin-top: 2rem;
+  border-radius: 50%;
+}
+@media (max-width:370px) {
+  .details{
+    font-size: 4vw;
+  }
+}
