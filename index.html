@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Weather Web APP | With Javascript</title>
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="weatherContainer">
-    <header>
-      <input type="text" placeholder="Enter city name" id="userInput" spellcheck="false" title="Enter city name">
-      <img id="searchBtn" src="assets/search.png" title="Search">
-    </header>
-    <img id="loading" class="hidden" src="assets/loading.gif">
-    <h1 id="error" class="hidden">City not found! Try again with a proper city name.</h1>
-    <main class="hidden">
-      <div class="cloudImg">
-        <img id="cloudStatus" src="assets/clouds.png">
-      </div>
-      <h1 ><span id="showTemp">0</span><small style="font-weight: 100;">°c</small></h1>
-      <h2 id="cityName" >Lahore</h2>
-    </main>
-    <div class="details hidden">
-      <div class="humidity">
-        <img src="assets/humidity.png">
-        <div class="humdityDetails">
-          <h2><span id="showHumidity">31</span>%</h2>
-          <p>Humidity</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather Web APP | With Javascript</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="weatherContainer">
+      <header>
+        <input
+          type="text"
+          placeholder="Enter city name"
+          id="userInput"
+          spellcheck="false"
+          title="Enter city name"
+        />
+        <img id="searchBtn" src="assets/search.png" title="Search" />
+      </header>
+      <img id="loading" class="hidden" src="assets/loading.gif" />
+      <h1 id="error" class="hidden">
+        City not found! Try again with a proper city name.
+      </h1>
+      <main class="hidden">
+        <div class="cloudImg">
+          <img id="cloudStatus" src="assets/clouds.png" />
         </div>
-      </div>
-      <div class="humidity">
-        <img src="assets/wind.png">
-        <div class="humdityDetails">
-          <h2><span id="windSpeed">4</span>km/h</h2>
-          <p>Wind Speed</p>
+        <h1>
+          <span id="showTemp">0</span><small style="font-weight: 100">°c</small>
+        </h1>
+        <h2 id="cityName">Lahore</h2>
+      </main>
+      <div class="details hidden">
+        <div class="humidity">
+          <img src="assets/humidity.png" />
+          <div class="humdityDetails">
+            <h2><span id="showHumidity">31</span>%</h2>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="humidity">
+          <img src="assets/wind.png" />
+          <div class="humdityDetails">
+            <h2><span id="windSpeed">4</span>km/h</h2>
+            <p>Wind Speed</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
-<script src="script.js"></script>
+    <footer>
+      Developed by
+      <a
+        href="https://github.com/Shehroze1995"
+        target="_blank"
+        style="font-weight: 900; text-decoration: none;color: #4338ca;"
+        >Shehroze</a
+      ><a href="https://github.com/Shehroze1995" target="_blank" style="margin-bottom: -5px;"
+        ><img src="assets/github.png" style="height: min(9vw,2rem); border-radius: 50%"
+      /></a>
+    </footer>
+  </body>
+  <script src="script.js"></script>
 </html>
